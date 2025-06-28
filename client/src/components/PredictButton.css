@@ -1,0 +1,142 @@
+/* PredictButton.css */
+
+.predict-btn {
+  position: relative;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 50%, #8b5cf6 100%);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  transform: translateY(0);
+}
+
+.predict-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+  background: linear-gradient(135deg, #059669 0%, #2563eb 50%, #7c3aed 100%);
+}
+
+.predict-btn:active {
+  transform: translateY(0);
+  transition: transform 0.1s;
+}
+
+.predict-btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.predict-icon {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.predict-btn:hover .predict-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.predict-text {
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.predict-btn-glow {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.6s;
+}
+
+.predict-btn:hover .predict-btn-glow {
+  left: 100%;
+}
+
+/* Pulse animation for extra attention */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.5);
+  }
+  100% {
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  }
+}
+
+.predict-btn {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.predict-btn:hover {
+  animation: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .predict-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  
+  .predict-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .predict-text {
+    display: none;
+  }
+  
+  .predict-btn-content::after {
+    content: "Predict";
+    font-size: 12px;
+  }
+}
+
+/* Accessibility improvements */
+.predict-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.5);
+}
+
+.predict-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.predict-btn:disabled:hover {
+  transform: none;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .predict-btn {
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+  }
+  
+  .predict-btn:hover {
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6);
+  }
+}

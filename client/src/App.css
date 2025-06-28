@@ -1,0 +1,120 @@
+/* Professional Healthcare Application Styles */
+:root {
+  --primary: #2563eb;
+  --primary-light: #93c5fd;
+  --primary-dark: #1d4ed8;
+  --secondary: #10b981;
+  --text: #1f2937;
+  --text-light: #6b7280;
+  --bg-light: #f9fafb;
+  --bg-white: #ffffff;
+  --border: #e5e7eb;
+}
+
+/* Base Layout */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--text);
+  background-color: var(--bg-light);
+}
+
+/* Logo Styles - More Professional */
+.logo {
+  height: 5em;
+  padding: 1em;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Card Component - Medical Professional Style */
+.card {
+  padding: 2rem;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  background-color: var(--bg-white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 800px;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Typography */
+.read-the-docs {
+  color: var(--text-light);
+  font-size: 1rem;
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+
+/* Professional Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Gradient Text - Subtle Professional Version */
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #root {
+    padding: 1.5rem;
+  }
+  
+  .logo {
+    height: 4em;
+    padding: 0.75em;
+  }
+  
+  .card {
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+  }
+}
+
+/* Accessibility Focus States */
+button:focus, input:focus, a:focus {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
+}
+
+/* Professional Loading Animation */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }

@@ -1,0 +1,230 @@
+:root {
+    --primary-color: #2b7cff;
+    --primary-hover: #1a5ed9;
+    --accent-color: #3bb273;
+    --text-primary: #1a1a1a;
+    --text-secondary: #6b7280;
+    --error-color: #dc2626;
+    --error-bg: #fef2f2;
+    --card-bg: #ffffff;
+    --bg-color: #f0f4f8;
+    --border-color: #d1d5db;
+    --font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    --google-blue: #4285F4;
+  --google-hover: #357ae8;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--font-family);
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .login-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    max-width: 420px;
+  }
+  
+  .login-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    fill: var(--primary-color);
+  }
+  
+  .brand-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  
+  .login-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  
+  .login-subtitle {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: var(--text-primary);
+    display: block;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: #fff;
+    transition: border-color 0.2s;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(43, 124, 255, 0.15);
+  }
+  
+  .submit-button {
+    margin-top: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  .submit-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .spinner {
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .error-message {
+    background-color: var(--error-bg);
+    color: var(--error-color);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .error-icon {
+    width: 18px;
+    height: 18px;
+    fill: var(--error-color);
+  }
+  
+  .login-footer {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  
+  .signup-link, .forgot-link {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .signup-link:hover, .forgot-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 500px) {
+    .login-card {
+      padding: 32px 20px;
+    }
+  }
+
+  .divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.divider-text {
+  padding: 0 10px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.google-button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: white;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s;
+}
+
+.google-button:hover {
+  background-color: #f8f9fa;
+  border-color: #c6c9cc;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+}
+  
