@@ -5,6 +5,11 @@
 
 MediVerse is an AI-powered, role-based telemedicine platform built by **Ankur Gupta** and **Abhyuday Pratap Singh** to revolutionize healthcare with:
 
+## 🏠 Home Page
+
+![Home Page](Home.png)
+
+
 ✅ **Video Consultations (WebRTC):** Secure, real-time video calls between patients and doctors.  
 🧠 **AI Predictions:** Instant health insights before consultation.  
 🎙 **ElevenLabs Voice Assistant:** Interact hands-free with our AI voice bot.  
