@@ -78,6 +78,6 @@ cd server
 npm install
 npm run dev
 
-# (Optional) If you have a Python-based service, run it with:
+#  Python-based service, run it with:
 python -m server.app
 
