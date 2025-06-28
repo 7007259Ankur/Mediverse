@@ -40,7 +40,7 @@ A full user manual PDF is available [here](https://drive.google.com/file/d/1tJwR
 
 ## 🔗 Live Application
 
-You can try MediVerse here: [YOUR_DEPLOYED_APP_LINK](https://medixpert.netlify.app/)
+You can try MediVerse here: [APP_LINK](https://medixpert.netlify.app/)
 
 ---
 
