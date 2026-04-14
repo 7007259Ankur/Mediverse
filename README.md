@@ -1,83 +1,141 @@
 # 🌐 MediVerse – The Future of Digital Healthcare
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://medixpert.netlify.app/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+MediVerse is an AI-powered, role-based telemedicine platform built by **Ankur Gupta** and  
+**Abhyuday Pratap Singh** to revolutionize digital healthcare with smart automation and  
+real-time remote consultations.
 
-MediVerse is an AI-powered, role-based telemedicine platform built by **Ankur Gupta** and **Abhyuday Pratap Singh** to revolutionize healthcare with:
+---
 
-## 🏠 Home Page
+## 🏠 Home Page  
+![Home Page](assets/Home.png)
 
-![Home Page](Home.png)
+MediVerse offers a clean, modern, intuitive interface packed with powerful capabilities:
 
-
-✅ **Video Consultations (WebRTC):** Secure, real-time video calls between patients and doctors.  
-🧠 **AI Predictions:** Instant health insights before consultation.  
-🎙 **ElevenLabs Voice Assistant:** Interact hands-free with our AI voice bot.  
-📄 **Document Upload & Analysis:** Upload prescriptions/reports and get insights directly in chat.  
-🔐 **Role-Based Access:** Tailored, secure features for patients and doctors.  
-🛒 **Shop Now:** Buy medical products directly within the app.
+- 🎥 **WebRTC-based video consultations**
+- 🧠 **AI-driven health predictions**
+- 🎙 **Voice-enabled assistant (ElevenLabs AI)**
+- 📄 **Smart document extraction & analysis**
+- 🔐 **Role-based dashboards for patients & doctors**
+- 🛒 **Built-in medical store module**
 
 ---
 
 ## 🚀 Features
 
-- **WebRTC Video Calls** – High-quality, encrypted consultations.
-- **AI Predictions** – Early diagnosis assistance.
-- **Document Analysis** – Automated parsing and interpretation.
-- **Voice Integration** – Conversational interface with ElevenLabs AI.
-- **High Security** – Encrypted document storage and streaming.
-- **User Roles** – Different dashboards & features for doctors and patients.
-- **Shop Now** – Integrated e-commerce for medical essentials.
+### 👨‍⚕️ WebRTC Video Calls  
+High-quality, secure, encrypted doctor–patient video consultations.
+
+### 🧠 AI Predictions  
+Predict early signs of health risks using machine learning models.
+
+### 📄 Document Analysis  
+Upload lab reports, prescriptions, or PDFs — get insights instantly.
+
+### 🎙 Voice Interaction  
+Hands-free conversational assistant powered by ElevenLabs Voice API.
+
+### 🔐 Secure Role-Based System  
+Each user gets customized access and a personalized dashboard.
+
+### 🛒 ShopNow Module  
+Integrated medical e-commerce experience built into the application.
 
 ---
 
-## 📸 Demo
-
-A detailed video demo will be shared soon. Stay tuned!
-
----
-
-## 📚 User Guide
-
-A full user manual PDF is available [here](https://drive.google.com/file/d/1tJwRuEg9FRfy-7qHhuxK0rZHVc4GfEHd/view?usp=sharing) to help new users get started.
+## 🎥 Demo  
+A full showcase video will be uploaded soon. Stay tuned!
 
 ---
 
-## 🔗 Live Application
+## 📚 User Guide  
+A detailed onboarding manual is available:  
+👉 **[Click here for the User Guide (PDF)](https://drive.google.com/file/d/1tJwRuEg9FRfy-7qHhuxK0rZHVc4GfEHd/view)**
 
-You can try MediVerse here: [APP_LINK](https://medixpert.netlify.app/)
+---
+
+## 🔗 Live Application  
+Try MediVerse here:  
+👉 **https://medixpert.netlify.app/**
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Frontend: React.js
-- Backend: Node.js + Express
-- Database: MongoDB
-- Real-Time: WebRTC, Socket.io
-- AI: Custom prediction models, ElevenLabs API
-- Hosting: AWS 
-- Security: JWT, HTTPS, role-based access
+### **Frontend**
+- React.js  
+- Vite  
+- HTML / CSS  
+
+### **Backend**
+- Node.js  
+- Express.js  
+- MongoDB  
+
+### **Real-Time Communication**
+- WebRTC  
+- Socket.io  
+
+### **AI & Automation**
+- Python-based health prediction models  
+- ElevenLabs Voice API  
+
+### **Cloud & Hosting**
+- AWS  
+- Netlify  
+- Cloud-based secure uploads  
+
+### **Security**
+- JWT Authentication  
+- HTTPS  
+- Role-based access control (RBAC)
 
 ---
 
-## 📂 Installation
+## 📦 Installation
 
 ```bash
-# Clone the repo
-git clone https://github.com/YOUR_GITHUB_USERNAME/MediVerse.git
+# Clone the repository
+git clone https://github.com/Abhii9180/HealthVerse_Milestone_WEBRTC_ABHYUDAY.git
 cd MediVerse
 
-# Start the frontend
+# -------------------------------
+# Frontend Setup
+# -------------------------------
 cd client
 npm install
 npm run dev
 
-# In a new terminal, start the backend
-cd server
+# -------------------------------
+# Backend Setup
+# -------------------------------
+cd ../server
 npm install
 npm run dev
 
-#  Python-based service, run it with:
+# -------------------------------
+# Python AI Service
+# -------------------------------
 python -m server.app
 
+```
+
+
+```
+📂 Project Structure (High Level)
+MediVerse/
+│── client/                # React frontend
+│── server/                # Node.js backend
+│── flask_ai/              # Python ML services
+│── RazorPay/              # Payment gateway module
+│── React-webRTC-main/     # WebRTC video call module
+│── assets/                # README images
+│── README.md
+│── package.json
+```
+
+
+👨‍💻 Contributors
+
+Abhyuday Pratap Singh
+
+Ankur Gupta
