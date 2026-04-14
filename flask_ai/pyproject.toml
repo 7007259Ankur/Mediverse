@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "flask-ai"
+version = "0.1.0"
+description = "Flask AI application with OCR capabilities"
+authors = ["7007259Ankur <ankurkumar7753@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/7007259Ankur/flask-ai"
+repository = "https://github.com/7007259Ankur/flask-ai"
+keywords = ["flask", "ocr", "ai"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.1.1"
+pytesseract = "^0.3.13"
+pillow = "^11.2.1"
+gunicorn = "^23.0.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+black = "^24.4.2"
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
